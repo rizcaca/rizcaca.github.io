@@ -1,1274 +1,264 @@
-<!DOCTYPE html>
-<!-- saved from url=(0053)https://getbootstrap.com/docs/4.0/examples/dashboard/ -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
-  <link rel="icon" href="https://getbootstrap.com/docs/4.0/assets/img/favicons/favicon.ico">
-  <title>Dashboard Template for Bootstrap</title>
-  <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/dashboard/">
-  <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
-  <link href="./assets/css/dashboard.css" rel="stylesheet">
-  <style type="text/css">/* Chart.js */
-  @-webkit-keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}@keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}.chartjs-render-monitor{-webkit-animation:chartjs-render-animation 0.001s;animation:chartjs-render-animation 0.001s;}
-  table, thead, tr, tbody, th, td {
-    text-align: center;
-    vertical-align : middle !important; 
-  }
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ulla & Cici Wedding</title>
 
-  .table td {
-    text-align: center;
-    vertical-align : middle;
-  }
-  </style>
+
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+<link href="css/glanz_library.css" rel="stylesheet">
+<link href="fonts/themify-icons.css" rel="stylesheet">
+<link href="fonts/wedding/flaticon.css" rel="stylesheet">
+
+<link href="css/glanz_style.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Dosis:300,400,600,700%7COpen+Sans:300,400,700%7CPlayfair+Display:400,400i,700,700i" rel="stylesheet">
+<link href="fonts/marsha/stylesheet.css" rel="stylesheet">
+
 </head>
 
-  <body data-new-gr-c-s-check-loaded="14.1005.0" data-gr-ext-installed="">
-    <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
-      <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="https://getbootstrap.com/docs/4.0/examples/dashboard/#">UBPN Sulawesi Tenggara</a>
-      <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">
-      <ul class="navbar-nav px-3">
-        <li class="nav-item text-nowrap">
-          <a class="nav-link" href="#">Sign out</a>
-        </li>
-      </ul>
-    </nav>
 
-    <div class="container-fluid">
-      <div class="row">
-        <main role="main" class="col-md-12 ml-sm-auto col-lg-12">
-          <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
-            <h1 class="h2">LAPORAN HARIAN ROTARY KILN 1</h1>
-            <div class="btn-toolbar mb-2 mb-md-0">
-              <div class="btn-group mr-2">
-                <button class="btn btn-sm btn-outline-secondary">Share</button>
-                <button class="btn btn-sm btn-outline-secondary">Export</button>
-              </div>
-              <button id="dropdownMenuButton" data-toggle="dropdown" class="btn btn-sm btn-outline-secondary dropdown-toggle">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
-                Select RK Data 
-              </button>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="RK_5_JAN_2021.html">05 Januari 2021</a>
-                <a class="dropdown-item" href="RK_4_JAN_2021.html">04 Januari 2021</a>
-                <a class="dropdown-item" href="RK_3_JAN_2021.html">03 Januari 2021</a>
-                <a class="dropdown-item" href="RK_2_JAN_2021.html">02 Januari 2021</a>
-                <a class="dropdown-item" href="RK_1_JAN_2021.html">01 Januari 2021</a>
-              </div>
-            </div>
-          </div>
-          <h3>SABTU, 1 JANUARI 2021</h3>
-          <div class="table-responsive">
-            <table class="table table-lg table-hover  table-bordered">
-              <thead>
-                <tr>
-                  <th rowspan="3">SHIFT</th>
-                  <th rowspan="3">JAM</th>
-                  <th colspan="3">ROTARY KLIN</th>
-                  <th colspan="5">POIDMETER</th>
-                  <th colspan="5">TEMPERATUR KALSIN</th> 
-                  <th colspan="5">BAHAN BAKAR</th> 
-                  <th rowspan="3" colspan="2">KETERANGAN</th> 
-                <tr>
-                  <th>charge</th>
-                  <th>rpm</th>
-                  <th>amper</th>
-                  <th colspan="2">Ore</th>
-                  <th colspan="2">Reductor</th>
-                  <th rowspan="2">BRIQUET</th>
-                  <th>Pyro</th>
-                  <th>TI1131</th>
-                  <th>TI1132</th>
-                  <th>S.Hopper</th>
-                  <th>TIC1535</th>
-                  <th>sludge</th>
-                  <th>Integrator</th>
-                  <th>MFO</th>
-                  <th>Coal</th>
-                  <th>Total</th>
-                </tr>
-                <tr>
-                  <th><i>t/h</i></th>
-                  <th></th>
-                  <th><i>A</i></th>
-                  <th>Bin A</th>
-                  <th>Bin B</th>
-                  <th>COAL</th>
-                  <th>SlagDS</th>
-                  <th>°c</th>
-                  <th>°c</th>
-                  <th>°c</th>
-                  <th>°c</th>
-                  <th></th>
-                  <th><i>l/h</i></th>
-                  <th><i>MFO</i></th>
-                  <th><i>l/h</i></th>
-                  <th><i>kg/h</i></th>
-                  <th><i>kg/h</i></th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td rowspan="8">3</td>
-                  <td>01.00</td>
-                  <td>30</td>
-                  <td>0,53</td>
-                  <td>223</td>
-                  <td>27</td>
-                  <td>-</td>
-                  <td>3,0</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>793</td>
-                  <td>583</td>
-                  <td>-</td>
-                  <td>199</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>1200</td>
-                  <td>1200</td>
-                  <td>4,47</td>
-                  <td>RK charge 30-20 tph (top&nbsp;&nbsp;&nbsp;bin H)</td>
-                </tr>
-                <tr>
-                  <td>02.00</td>
-                  <td>30</td>
-                  <td>0,53</td>
-                  <td>227</td>
-                  <td>27</td>
-                  <td>-</td>
-                  <td>3,0</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>873</td>
-                  <td>588</td>
-                  <td>-</td>
-                  <td>197</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>1000</td>
-                  <td>1000</td>
-                  <td colspan="2"> </td>
-                </tr>
-                <tr>
-                  <td>03.00</td>
-                  <td>30</td>
-                  <td>0,53</td>
-                  <td>226</td>
-                  <td>-</td>
-                  <td>27</td>
-                  <td>3,0</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>840</td>
-                  <td>581</td>
-                  <td>-</td>
-                  <td>188</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>1000</td>
-                  <td>1000</td>
-                  <td colspan="2"> </td>
-                </tr>
-                <tr>
-                  <td>04.00</td>
-                  <td>30</td>
-                  <td>0,53</td>
-                  <td>222</td>
-                  <td>-</td>
-                  <td>27</td>
-                  <td>3,0</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>887</td>
-                  <td>525</td>
-                  <td>-</td>
-                  <td>193</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>1000</td>
-                  <td>1000</td>
-                  <td colspan="2"> </td>
-                </tr>
-                <tr>
-                  <td>05.00</td>
-                  <td>20</td>
-                  <td>0,40</td>
-                  <td>222</td>
-                  <td>-</td>
-                  <td>18</td>
-                  <td>2,0</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>785</td>
-                  <td>571</td>
-                  <td>-</td>
-                  <td>185</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>900</td>
-                  <td>900</td>
-                  <td colspan="2"> </td>
-                </tr>
-                <tr>
-                  <td>06.00</td>
-                  <td>20</td>
-                  <td>0,40</td>
-                  <td>220</td>
-                  <td>-</td>
-                  <td>18</td>
-                  <td>2,3</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>788</td>
-                  <td>551</td>
-                  <td>-</td>
-                  <td>179</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>900</td>
-                  <td>900</td>
-                  <td colspan="2"> </td>
-                </tr>
-                <tr>
-                  <td>07.00</td>
-                  <td>20</td>
-                  <td>0,40</td>
-                  <td>218</td>
-                  <td>-</td>
-                  <td>18</td>
-                  <td>2,3</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>737</td>
-                  <td>598</td>
-                  <td>-</td>
-                  <td>188</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>900</td>
-                  <td>900</td>
-                  <td colspan="2"><i><b>SUMADIYONO</b></i></td>
-                </tr>
-                <tr>
-                  <td>08.00</td>
-                  <td>20</td>
-                  <td>0,40</td>
-                  <td>219</td>
-                  <td>-</td>
-                  <td>18</td>
-                  <td>2,3</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>745</td>
-                  <td>553</td>
-                  <td>-</td>
-                  <td>180</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>900</td>
-                  <td>900</td>
-                  <td colspan="2">MONITORING&nbsp;&nbsp;&nbsp;SUPERVISOR</td>
-                </tr>
-                <tr>
-                  <td rowspan="8">1</td>
-                  <td>09:00</td>
-                  <td>20</td>
-                  <td>0,40</td>
-                  <td>211</td>
-                  <td>18</td>
-                  <td>-</td>
-                  <td>2,2</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>775</td>
-                  <td>487</td>
-                  <td>-</td>
-                  <td>190</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>750</td>
-                  <td>750</td>
-                  <td>08.00-16.00</td>
-                  <td>Charge RK 20 tph</td>
-                </tr>
-                <tr>
-                  <td>10:00</td>
-                  <td>20</td>
-                  <td>0,40</td>
-                  <td>212</td>
-                  <td>18</td>
-                  <td>-</td>
-                  <td>2,2</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>740</td>
-                  <td>500</td>
-                  <td>-</td>
-                  <td>190</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>900</td>
-                  <td>900</td>
-                  <td colspan="2"> </td>
-                </tr>
-                <tr>
-                  <td>11:00</td>
-                  <td>20</td>
-                  <td>0,42</td>
-                  <td>210</td>
-                  <td>18</td>
-                  <td>-</td>
-                  <td>2,2</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>858</td>
-                  <td>471</td>
-                  <td>-</td>
-                  <td>195</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>900</td>
-                  <td>900</td>
-                  <td colspan="2"> </td>
-                </tr>
-                <tr>
-                  <td>12.00</td>
-                  <td>20</td>
-                  <td>0,42</td>
-                  <td>210</td>
-                  <td>18</td>
-                  <td>-</td>
-                  <td>2,2</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>797</td>
-                  <td>489</td>
-                  <td>-</td>
-                  <td>195</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>900</td>
-                  <td>900</td>
-                  <td colspan="2"> </td>
-                </tr>
-                <tr>
-                  <td>13:00</td>
-                  <td>20</td>
-                  <td>0,42</td>
-                  <td>213</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>2,2</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>870</td>
-                  <td>501</td>
-                  <td>-</td>
-                  <td>197</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>900</td>
-                  <td>900</td>
-                  <td colspan="2"> </td>
-                </tr>
-                <tr>
-                  <td>14:00</td>
-                  <td>20</td>
-                  <td>0,42</td>
-                  <td>208</td>
-                  <td>-</td>
-                  <td>18</td>
-                  <td>2,2</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>762</td>
-                  <td>610</td>
-                  <td>-</td>
-                  <td>188</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>800</td>
-                  <td>800</td>
-                  <td colspan="2"> </td>  
-                </tr>
-                <tr>
-                  <td>15:00</td>
-                  <td>20</td>
-                  <td>0,42</td>
-                  <td>208</td>
-                  <td>-</td>
-                  <td>18</td>
-                  <td>2,2</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>733</td>
-                  <td>454</td>
-                  <td>-</td>
-                  <td>188</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>800</td>
-                  <td>800</td>
-                  <td colspan="2"><i><b>NATANIEL .T</b></i></td>
-                </tr>
-                <tr>
-                  <td>16:00</td>
-                  <td>20</td>
-                  <td>0,42</td>
-                  <td>213</td>
-                  <td>-</td>
-                  <td>18</td>
-                  <td>2,2</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>787</td>
-                  <td>471</td>
-                  <td>-</td>
-                  <td>184</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>800</td>
-                  <td>800</td>
-                  <td colspan="2">MONITORING&nbsp;&nbsp;&nbsp;SUPERVISOR</td>
-                </tr>
-                <tr>
-                  <td rowspan="8">2</td>
-                  <td>17:00</td>
-                  <td>20</td>
-                  <td>0,42</td>
-                  <td>208</td>
-                  <td>-</td>
-                  <td>18</td>
-                  <td>2,5</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>685</td>
-                  <td>457</td>
-                  <td>-</td>
-                  <td>180</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>900</td>
-                  <td>900</td>
-                  <td colspan="2"> </td>
-                </tr>
-                <tr>
-                  <td>18:00</td>
-                  <td>20</td>
-                  <td>0,42</td>
-                  <td>206</td>
-                  <td>-</td>
-                  <td>18</td>
-                  <td>2,5</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>619</td>
-                  <td>463</td>
-                  <td>-</td>
-                  <td>182</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>900</td>
-                  <td>900</td>
-                  <td colspan="2"> </td>
-                </tr>
-                <tr>
-                  <td>19:00</td>
-                  <td>20</td>
-                  <td>0,42</td>
-                  <td>208</td>
-                  <td>-</td>
-                  <td>18</td>
-                  <td>2,5</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>721</td>
-                  <td>482</td>
-                  <td>-</td>
-                  <td>185</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>900</td>
-                  <td>900</td>
-                  <td colspan="2"> </td>
-                </tr>
-                <tr>
-                  <td>20:00</td>
-                  <td>20</td>
-                  <td>0,42</td>
-                  <td>210</td>
-                  <td>-</td>
-                  <td>18</td>
-                  <td>2,5</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>733</td>
-                  <td>511</td>
-                  <td>-</td>
-                  <td>187</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>900</td>
-                  <td>900</td>
-                  <td colspan="2"> </td>
-                </tr>
-                <tr>
-                  <td>21:00</td>
-                  <td>20</td>
-                  <td>0,42</td>
-                  <td>212</td>
-                  <td>18</td>
-                  <td>-</td>
-                  <td>2,5</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>793</td>
-                  <td>500</td>
-                  <td>-</td>
-                  <td>182</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>900</td>
-                  <td>900</td>
-                  <td colspan="2"> </td>
-                </tr>
-                <tr>
-                  <td>22:00</td>
-                  <td>20</td>
-                  <td>0,42</td>
-                  <td>208</td>
-                  <td>18</td>
-                  <td>-</td>
-                  <td>2,5</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>781</td>
-                  <td>495</td>
-                  <td>-</td>
-                  <td>184</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>900</td>
-                  <td>900</td>
-                  <td colspan="2"> </td>
-                </tr>
-                <tr>
-                  <td>23:00</td>
-                  <td>20</td>
-                  <td>0,42</td>
-                  <td>204</td>
-                  <td>18</td>
-                  <td>-</td>
-                  <td>2,5</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>793</td>
-                  <td>512</td>
-                  <td>-</td>
-                  <td>184</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>900</td>
-                  <td>900</td>
-                  <td colspan="2"><i><b>ZAID ARJUNI DF</b></i></td>
-                </tr>
-                <tr>
-                  <td>00:00</td>
-                  <td>20</td>
-                  <td>0,42</td>
-                  <td>210</td>
-                  <td>18</td>
-                  <td>-</td>
-                  <td>2,5</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>802</td>
-                  <td>515</td>
-                  <td>-</td>
-                  <td>185</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>900</td>
-                  <td>900</td>
-                  <td colspan="2">MONITORING&nbsp;&nbsp;&nbsp;SUPERVISOR</td>
-                </tr>
-                <tr>
-                  <td colspan="2"><i><b>Average</b></i> </td>
-                  <td>22</td>
-                  <td>0,43</td>
-                  <td>214</td>
-                  <td>20</td>
-                  <td>19</td>
-                  <td>2,4</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>779</td>
-                  <td>520</td>
-                  <td>-</td>
-                  <td>188</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>906</td>
-                  <td>906</td>
-                  <td colspan="2"></td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </main>
-      </div>
-      <div class="row">
-        <main role="main" class="col-md-4 ml-sm-auto col-lg-4 ">
-          
-          <div class="table-responsive">
-            <h5>ROTARY KILN 1</h5>
-            <table class="table table-lg table-hover  table-bordered">
-              <thead>
-                <tr>
-                  <th style="width:40%" ></th>
-                  <th style="width:15%">SHIFT 3</th>
-                  <th style="width:15%">SHIFT 1</th>
-                  <th style="width:15%">SHIFT 2</th>
-                  <th style="width:15%">TOTAL</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>CONDITION&nbsp;&nbsp;&nbsp;ORE</td>
-                  <td>185</td>
-                  <td>140,6</td>
-                  <td>141</td>
-                  <td><b>467</b></td>
-                </tr>
-                <tr>
-                  <td>BATU&nbsp;&nbsp;&nbsp;BARA</td>
-                  <td>21,1</td>
-                  <td>17,5</td>
-                  <td>19,4</td>
-                  <td><b>58,0</b></td>
-                </tr>
-                <tr>
-                  <td>SLAG&nbsp;&nbsp;&nbsp;De-S</td>
-                  <td>0</td>
-                  <td>0</td>
-                  <td>0</td>
-                  <td><b>0,0</b></td>
-                </tr>
-                <tr>
-                  <td>BATU&nbsp;&nbsp;&nbsp;KAPUR/ANTH</td>
-                  <td>0</td>
-                  <td>0</td>
-                  <td>0</td>
-                  <td><b>0,0</b></td>
-                </tr>
-                <tr>
-                  <td>ANGKATAN&nbsp;&nbsp;&nbsp;CALSIN</td>
-                  <td>18</td>
-                  <td>13</td>
-                  <td>13</td>
-                  <td><b>44</b></td>
-                </tr>
-                <tr>
-                  <td>WAKTU&nbsp;&nbsp;&nbsp;OPERASI (Menit)</td>
-                  <td>480</td>
-                  <td>480</td>
-                  <td>480</td>
-                  <td><b>1440</td>
-                </tr>
-              </tbody>
-            </table>
-            <h5>C F S 1</h5>
-            <table class="table table-lg table-hover  table-bordered">
-              <thead>
-                <tr>
-                  <th style="width:40%" ></th>
-                  <th style="width:15%">SHIFT 3</th>
-                  <th style="width:15%">SHIFT 1</th>
-                  <th style="width:15%">SHIFT 2</th>
-                  <th style="width:15%">TOTAL</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>COAL</td>
-                  <td>7,1</td>
-                  <td>8,8</td>
-                  <td>7,3</td>
-                  <td><b>23,2</b></td>
-                </tr>
-                <tr>
-                  <td>IDO</td>
-                  <td>118</td>
-                  <td>101</td>
-                  <td>152</td>
-                  <td><b>371</b></td>
-                </tr>
-                <tr>
-                  <td>JAM&nbsp;&nbsp;&nbsp;OPR.</td>
-                  <td>185</td>
-                  <td>120</td>
-                  <td>228</td>
-                  <td><b>533</b></td>
-                </tr>
-              </tbody>
-            </table>
-            <h5>FUEL RK 1</h5>
-            <table class="table table-lg table-hover  table-bordered">
-              <thead>
-                <tr>
-                  <th style="width:40%" ></th>
-                  <th style="width:15%">SHIFT 3</th>
-                  <th style="width:15%">SHIFT 1</th>
-                  <th style="width:15%">SHIFT 2</th>
-                  <th style="width:15%">TOTAL</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>PV.&nbsp;&nbsp;&nbsp;COAL</td>
-                  <td>5.767</td>
-                  <td>4.922</td>
-                  <td>4.797</td>
-                  <td><b>15486</b></td>
-                </tr>
-                <tr>
-                  <td>MFO</td>
-                  <td>0</td>
-                  <td>0</td>
-                  <td>0</td>
-                  <td><b>0,0</b></td>
-                </tr>
-                <tr>
-                  <td>SLUDGE</td>
-                  <td>0</td>
-                  <td>0</td>
-                  <td>0</td>
-                  <td><b>0,0</b></td>
-                </tr>
-                <tr>
-                  <td> </td>
-                  <td> </td>
-                  <td> </td>
-                  <td> </td>
-                  <td> </td>
-                </tr>
-                <tr>
-                  <td><b><i>Fuel&nbsp;&nbsp;&nbsp;consumption ( kg/TCO )</i></b></td>
-                  <td><b><i>31,17</i></b></td>
-                  <td><b><i>35,01</i></b></td>
-                  <td><b><i>34,02</i></b></td>
-                  <td><b><i>33,40</i></b></td>
-                </tr>
-              </tbody>
-            </table>
-            <table class="table table-lg table-hover  table-bordered">
-              <tbody>
-                <tr>
-                  <td style="width:40%">TCO (ton)</td>
-                  <td style="width:15%">467</td>
-                  <td style="width:30%">Jam operasi RK1</td>
-                  <td style="width:15%"><b>1440</b></td>
-                </tr>
-                <tr>
-                  <td style="width:40%">Batubara Reduktor (ton)</td>
-                  <td style="width:15%">58,0</td>
-                  <td style="width:30%">Angkatan Kalsine</td>
-                  <td style="width:15%"><b>44</b></td>
-                </tr>
-                <tr>
-                  <td style="width:40%">Slag&nbsp;&nbsp;&nbsp;De-S (ton</td>
-                  <td style="width:15%">0</td>
-                  <td style="width:30%">Temp. TIC 1132</td>
-                  <td style="width:15%"><b>520</b></td>
-                </tr>
-                <tr>
-                  <td style="width:40%">Briquet</td>
-                  <td style="width:15%">0</td>
-                  <td style="width:30%">Temp. TIC 1535</td>
-                  <td style="width:15%"><b>188</b></td>
-                </tr>
-                <tr>
-                  <td style="width:40%">Batu&nbsp;&nbsp;&nbsp;kapur (ton)</td>
-                  <td style="width:15%">0</td>
-                  <td style="width:30%">Batubara RC</td>
-                  <td style="width:15%"><b>23,2</b></td>
-                </tr>
-                <tr>
-                  <td style="width:40%">MC&nbsp;&nbsp;&nbsp;Batubara red (%)</td>
-                  <td style="width:15%">9,61</td>
-                  <td style="width:30%">IDO</td>
-                  <td style="width:15%"><b>371</b></td>
-                </tr>
-                <tr>
-                  <td style="width:40%">LOI&nbsp;&nbsp;&nbsp;avg (%)</td>
-                  <td style="width:15%">0,31</td>
-                  <td style="width:30%">MC PV Coal</td>
-                  <td style="width:15%"><b>1,19</b></td>
-                </tr>
-                <tr>
-                  <td style="width:40%">PV&nbsp;&nbsp;&nbsp;COAL (ton)</td>
-                  <td style="width:15%">15486</td>
-                  <td style="width:30%">Jam operasi CFS 2</td>
-                  <td style="width:15%"><b>533</b></td>
-                </tr>
-                <tr>
-                  <td style="width:40%">MFO</td>
-                  <td style="width:15%">0</td>
-                  <td style="width:30%"> </td>
-                  <td style="width:15%"> </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </main>
-        <main role="main" class="col-md-8 ml-sm-auto col-lg-8 ">
-          <div class="row">
-              <div class="col-md-9 col-lg-9">
-                <h5 >ANALISA KILN FEED RK 1 ANALISA CFS 1</h5>
-                <table class=" table table-lg table-hover  table-bordered">
-                  <thead>
-                    <tr>
-                      <th>SHIFT</th>
-                      <th>KILN FEED</th>
-                      <th>COAL</th>
-                      <th>SLAG</th>
-                      <th>ANTH</th>
-                      <th>NI</th>
-                      <th>Fe/Ni</th>
-                      <th>MgO</th>
-                      <th>CaO</th>
-                      <th>SiO₂</th>
-                      <th>BC</th>
-                      <th>Fe</th>
-                      <th>S/M</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>3</td>
-                      <td>19,59</td>
-                      <td>9,21</td>
-                      <td>-</td>
-                      <td>-</td>
-                      <td>1,96</td>
-                      <td>7,78</td>
-                      <td>18,04</td>
-                      <td>0,49</td>
-                      <td>37,05</td>
-                      <td>0,50</td>
-                      <td>15,25</td>
-                      <td>2,05</td>
-                    </tr>
-                    <tr>
-                      <td>1</td>
-                      <td>18,78</td>
-                      <td>9,66</td>
-                      <td>-</td>
-                      <td>-</td>
-                      <td>1,93</td>
-                      <td>8,50</td>
-                      <td>17,33</td>
-                      <td>0,40</td>
-                      <td>33,18</td>
-                      <td>0,53</td>
-                      <td>16,41</td>
-                      <td>1,91</td>
-                    </tr>
-                    <tr>
-                      <td>2</td>
-                      <td>20,64</td>
-                      <td>9,96</td>
-                      <td>-</td>
-                      <td>-</td>
-                      <td>2,27</td>
-                      <td>6,35</td>
-                      <td>19,91</td>
-                      <td>0,33</td>
-                      <td>34,52</td>
-                      <td>0,58</td>
-                      <td>14,41</td>
-                      <td>1,73</td>
-    
-                    </tr>
-                    <tr>
-                      <td><b>AVG</b></td>
-                      <td><b>19,67</b></td>
-                      <td><b>9,61</b></td>
-                      <td><b> </b></td>
-                      <td><b>-</b></td>
-                      <td><b>2,05</b></td>
-                      <td><b>7,54</b></td>
-                      <td><b>18,43</b></td>
-                      <td><b>0,41</b></td>
-                      <td><b>34,92</b></td>
-                      <td><b>0,54</b></td>
-                      <td><b>15,36</b></td>
-                      <td><b>1,90</b></td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <div class="col-md-3 col-lg-3 ">
-                <h5 >ANALISA CFS 1</h5>
-                <table class="table table-lg table-bordered">
-                  <thead>
-                    <tr>
-                      <th>RC</th>
-                      <th>PC</th>
-                      <th>AYAK</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td><font color="#fff">0</font></td>
-                      <td><font color="#fff">0</font></td>
-                      <td><font color="#fff">0</font></td>
-                    </tr>
-                    <tr>
-                      <td>0,54</td>
-                      <td>15,36</td>
-                      <td>1,90</td>
-                    </tr>
-                    <tr>
-                      <td><font color="#fff">0</font></td>
-                      <td><font color="#fff">0</font></td>
-                      <td><font color="#fff">0</font></td>
-                    </tr>
-                    <tr>
-                      <td><font color="#fff">0</font></td>
-                      <td><font color="#fff">0</font></td>
-                      <td><font color="#fff">0</font></td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-          </div>
-          <h5></h5>
-              
-          <table class="table table-lg table-bordered">
-            <thead>
-              <tr>
-                <th rowspan="2">SHIFT</th>
-                <th rowspan="2">JAM</th>
-                <th rowspan="2">LOI</th>
-                <th rowspan="2">CHARGE</th>
-                <th rowspan="2">rpm</th>
-                <th colspan="3">BAHAN BAKAR</th>
-                <th colspan="2">TEMPERATUR</th>
-                <th rowspan="2">COAL</th>
-                <th rowspan="2">O₂</th>
-                <th rowspan="2">FULL NESS</th>
-                <th colspan="7" rowspan="2">KET</th>
-              </tr>
-              <tr>
-                <td>MFO</td>
-                <td>COAL</td>
-                <td>TOTAL</td>
-                <td>no. 1</td>
-                <td>no. 2</td>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>3</td>
-                <td>1:00</td>
-                <td>0,12</td>
-                <td>30</td>
-                <td>0,53</td>
-                <td>-</td>
-                <td>40,0</td>
-                <td>40,0</td>
-                <td>793</td>
-                <td>583</td>
-                <td>100</td>
-                <td>-</td>
-                <td>-</td>
-                <td colspan="7"> </td>
-              </tr>
-              <tr>
-                <td></td>
-                <td>3:00</td>
-                <td>0,14</td>
-                <td>30</td>
-                <td>0,53</td>
-                <td>-</td>
-                <td>33,3</td>
-                <td>33,3</td>
-                <td>840</td>
-                <td>581</td>
-                <td>100</td>
-                <td>-</td>
-                <td>-</td>
-                <td colspan="7"> </td>
-              </tr>
-              <tr>
-                <td></td>
-                <td>5:00</td>
-                <td>0,13</td>
-                <td>20</td>
-                <td>0,40</td>
-                <td>-</td>
-                <td>45,0</td>
-                <td>45,0</td>
-                <td>758</td>
-                <td>571</td>
-                <td>100</td>
-                <td>-</td>
-                <td>-</td>
-                <td colspan="7"> </td>
-              </tr>
-              <tr>
-                <td></td>
-                <td>7:00</td>
-                <td>0,12</td>
-                <td>20</td>
-                <td>0,40</td>
-                <td>-</td>
-                <td>45,0</td>
-                <td>45,0</td>
-                <td>737</td>
-                <td>598</td>
-                <td>100</td>
-                <td>-</td>
-                <td>-</td>
-                <td colspan="7"> </td>
-              </tr>
-              <tr>
-                <td>1</td>
-                <td>9:00</td>
-                <td>0,81</td>
-                <td>20</td>
-                <td>0,40</td>
-                <td>-</td>
-                <td>37,5</td>
-                <td>37,5</td>
-                <td>775</td>
-                <td>487</td>
-                <td>100</td>
-                <td>-</td>
-                <td>-</td>
-                <td colspan="7"> </td>
-              </tr>
-              <tr>
-                <td></td>
-                <td>11:00</td>
-                <td>0,79</td>
-                <td>20</td>
-                <td>0,40</td>
-                <td>-</td>
-                <td>47,5</td>
-                <td>47,5</td>
-                <td>858</td>
-                <td>471</td>
-                <td>100</td>
-                <td>-</td>
-                <td>-</td>
-                <td colspan="7"> </td>
-              </tr>
-              <tr>
-                <td></td>
-                <td>13:00</td>
-                <td>0,77</td>
-                <td>20</td>
-                <td>0,40</td>
-                <td>-</td>
-                <td>47,5</td>
-                <td>47,5</td>
-                <td>870</td>
-                <td>501</td>
-                <td>100</td>
-                <td>-</td>
-                <td>-</td>
-                <td colspan="7"> </td>
-              </tr>
-              <tr>
-                <td></td>
-                <td>15:00</td>
-                <td>0,78</td>
-                <td>20</td>
-                <td>0,40</td>
-                <td>-</td>
-                <td>40,0</td>
-                <td>40,0</td>
-                <td>733</td>
-                <td>454</td>
-                <td>100</td>
-                <td>-</td>
-                <td>-</td>
-                <td colspan="7"> </td>
-              </tr>
-              <tr>
-                <td>2</td>
-                <td>17:00</td>
-                <td>0,00</td>
-                <td>20</td>
-                <td>0,42</td>
-                <td>-</td>
-                <td>45,0</td>
-                <td>45,0</td>
-                <td>685</td>
-                <td>457</td>
-                <td>100</td>
-                <td>-</td>
-                <td>-</td>
-                <td colspan="7"> </td>
-              </tr>
-              <tr>
-                <td></td>
-                <td>19:00</td>
-                <td>0,00</td>
-                <td>20</td>
-                <td>0,42</td>
-                <td>-</td>
-                <td>45,0</td>
-                <td>45,0</td>
-                <td>721</td>
-                <td>482</td>
-                <td>100</td>
-                <td>-</td>
-                <td>-</td>
-                <td colspan="7"> </td>
-              </tr>
-              <tr>
-                <td></td>
-                <td>21:00</td>
-                <td>0,00</td>
-                <td>20</td>
-                <td>0,42</td>
-                <td>-</td>
-                <td>45,0</td>
-                <td>45,0</td>
-                <td>793</td>
-                <td>500</td>
-                <td>100</td>
-                <td>-</td>
-                <td>-</td>
-                <td colspan="7"> </td>
-              </tr>
-              <tr>
-                <td></td>
-                <td>23:00</td>
-                <td>0,00</td>
-                <td>20</td>
-                <td>0,42</td>
-                <td>-</td>
-                <td>45,0</td>
-                <td>45,0</td>
-                <td>793</td>
-                <td>512</td>
-                <td>100</td>
-                <td>-</td>
-                <td>-</td>
-                <td colspan="7"> </td>
-              </tr>
-              <tr>
-                <td><b>Average</b></td>
-                <td></td>
-                <td><b>0,31</b></td>
-                <td><b>22</b></td>
-                <td><b>0,43</b></td>
-                <td><b>-</b></td>
-                <td><b>43,0</b></td>
-                <td><b>43,0</b></td>
-                <td><b>779,67</b></td>
-                <td><b>516</b></td>
-                <td><b>100</b></td>
-                <td> </td>
-                <td> </td>
-                <td colspan="7"> </td>
-              </tr>
-            </tbody>
-          </table>
-          <h5>Mengetahui</h5>
-          <div class="row">
-            <div class="col-md-4 col-lg-4">
-              <div class="card ">
-                <div class="card-body">
-                  <blockquote class="blockquote mb-0">
-                    <p>ASSISTANT MANAGER RK 1,2 </p>
-                    <p><b><i>Drs. H. Musram M</i></b></p>
-                    <footer >NPP.309466 5930</footer>
-                  </blockquote>
+<body class="gla_middle_titles">
+    <div class="gla_page" id="gla_page">
+        <a href="#gla_page" class="gla_top ti ti-angle-up gla_go"></a>
+        <div class="gla_music_icon"><i class="ti ti-music"></i></div>
+        <div class="gla_music_icon_cont">
+            <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/108238095&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/sonneillonxo" title="sonneillonxo" target="_blank" style="color: #cccccc; text-decoration: none;">sonneillonxo</a> · <a href="https://soundcloud.com/sonneillonxo/safetysuit-never-stop-wedding" title="Safetysuit - Never Stop (Wedding Version)" target="_blank" style="color: #cccccc; text-decoration: none;">Safetysuit - Never Stop (Wedding Version)</a></div>
+            <!-- <iframe src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/108238095&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe> -->
+            <!-- <iframe src="audio/audio.mp3"></iframe> -->
+
+        </div>
+        <header>       
+            <nav class="gla_light_nav gla_transp_nav">
+                <div class="container"> 
+                    <div class="gla_logo_container clearfix">
+                        <!-- <img src="images/glanz_logo.png" alt="" class="gla_logo_rev"> -->
+                        <div class="gla_logo_txt">
+                            <a href="/" class="gla_logo">Ulla & Cici</a>
+                            <!-- <div class="gla_logo_und">August 10, 2017</div> -->
+                        </div>
+                    </div>
+
+                    <!-- Menu -->
+                    <div class="gla_main_menu gla_main_menu_mobile">
+                        
+                        <div class="gla_main_menu_icon">
+                            <i></i><i></i><i></i><i></i>
+                            <b>Menu</b>
+                            <b class="gla_main_menu_icon_b">Back</b>
+                        </div>
+                    </div>
+                    
+                    <!-- Menu Content -->
+                    <div class="gla_main_menu_content gla_image_bck" data-color="rgba(0,0,0,0.9)" data-image="images/back02.jpg">
+                        <!-- Over -->
+                        <div class="gla_over" data-color="#000" data-opacity="0.7"></div>
+                    </div>
+
+                    <div class="gla_main_menu_content_menu gla_wht_txt text-right">
+                        <div class="container">
+                            <ul>
+
+                                <li><a href="#gla_page">Undangan</a></li>
+                                <li><a href="#gla_content">Mempelai</a></li>
+                                <li><a href="#acara">Detail Acara</a></li>
+                                <li><a href="#lokasi">Lokasi</a></li>
+                                <li><a href="#prokes">Prokes</a></li>
+                            </ul>
+                        </div>
+                        <!-- container end -->
+                    </div>
+                    <!-- menu content end -->
+
+                    <!-- Top Menu -->
+                    <div class="gla_default_menu">
+                        <ul>
+                            <li><a href="#gla_page">Undangan</a></li>
+                            <li><a href="#gla_content">Mempelai</a></li>
+                            <li><a href="#acara">Detail Acara</a></li>
+                            <li><a href="#lokasi">Lokasi</a></li>
+                            <li><a href="#prokes">Prokes</a></li>
+                        </ul>
+                    </div>
+                    <!-- Top Menu End -->
+
+
+                
                 </div>
-              </div>
-            </div>
-            <div class="col-md-4 col-lg-4">
-              <div class="card ">
-                <div class="card-body">
-                  <blockquote class="blockquote mb-0">
-                    <p>CORD. SUPERVISOR RK 1,2</p>
-                    <p><b><i>MUHAMMAD DJAFAR</i></b></p>
-                    <footer >NPP. 6519</footer>
-                  </blockquote>
+                <!-- container end -->
+            </nav>
+            
+        </header>
+        <!-- Header End -->
+
+
+        <div class="gla_slider gla_image_bck  gla_wht_txt gla_fixed"  data-image="images/back02.jpg" data-stellar-background-ratio="0.8">
+            <div class="gla_over" data-color="#282828" data-opacity="0.8"></div>
+            <div class="container">
+                <div class="gla_slide_txt gla_slide_center_bottom text-center">
+                    <p><img src="images/badge1.png"  alt="" height="350"></p>
+                    <p style=" margin-bottom: 20px; font-size: 18px;">Kepada Yth. <br> Bapak/Ibu/Saudara/i</p>
+                    <h2 id="penerima" style="margin-bottom: 10px;">Rizka Afriani Tandipayuk</h2>
+                    <p >Mohon maaf bila terdapat kesalahan penulisan nama/gelar</p>
                 </div>
-              </div>
             </div>
-          </div>
+            <a class="gla_scroll_down gla_go" href="#gla_content"><b></b>Buka Undangan</a>
+        </div>
+        <!-- Slider End -->
+        <section id="gla_content" class=" gla_content gla_section gla_image_bck" data-color="#f5efe4" >
+            <div style="padding-top: 80px;" class="container text-center">
+                <div class="row text-center">
+                    <p style="font-style: normal;color: #000000;  margin-bottom: 10px; font-size: 25px;">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيم</h3>
+                    <p style="font-style: normal;color: #000000;  font-size: 16px; margin-bottom: 2px; ">Assalamu`alaikum <br> Warahmatullaahi Wabarakaatuh <br> Dengan memohon rahmat dan ridho Allah SWT, kami bermaksud menyelenggarakan pernikahan kami.</p>
+                
+                    <div style="margin-top: 3px;" class="col-md-12 gla_round_block">
+                        <div class="gla_round_im gla_image_bck" style="margin-bottom: 2px;"  data-opacity="0.8" data-image="images/animasi2.png"></div>
+                        <h4 style="font-style: normal;color: #000000; ">Nugrah Septian Tangkelangi, S.H</h4>
+                        <p  style="margin-bottom: 5px; font-style: normal;color: #000000; font-size: 16px; ">Putra Ketiga dari <br> Wellem S. Tangkelangi, S.H. (alm.) <br> & Ibu Hamidah </p>
+                        <p style="margin-top: 10px; margin-bottom: 3px; font-family: 'Dancing Script', 'Sans-serif' ; font-size: 20px;">- & -</p>
+                        <h4 style="font-style: normal;color: #000000; ">Cici Karmila, S.Sos.</h4>
+                        <p  style="font-style: normal;color: #000000; font-size: 16px; ">Putri Kelima dari <br> Bapak M. Djabir Sanusi (Alm.) <br> & Ibu Lepa (Almh.) </p>
 
-        </main>
+                    </div>
+                </div>   
+            </div>
 
-      </div>
+        </section>
+
+        <section id="acara" class="gla_section" style="background-color: rgb(237, 246, 248)" >
+            
+            
+            <div  class="container text-center">
+                <h2>Detail Acara</h2>
+
+                <hr>
+
+                <div style="padding-top: 30px;"class="gla_icon_boxes row gla_news_block" >
+                    <div data-animation="animation_blocks" data-bottom="@class:noactive" data--100-bottom="@class:active">
+                        <div class="gla_icon_box  col-md-6 col-sm-12 col-lg-12">
+                            
+                            <div class="gla_icon_box_content text-center">
+                                <i class="flaticon-028-ring"></i>
+                                <h3 style="margin-top: 2px; margin-bottom: 5px"><b>Akad Nikah</b></h4>
+                                <hr style="margin-top: 2px; margin-bottom: 30px">
+                                <p><b>20 Oktober 2021 <br> Kediaman Mempelai Wanita</b></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="padding-top: 30px;"class="gla_icon_boxes row gla_news_block" >
+                    <div data-animation="animation_blocks" data-bottom="@class:noactive" data--100-bottom="@class:active">
+                        <div class="gla_icon_box  col-md-6 col-sm-12 col-lg-12">
+                            
+                            <div class="gla_icon_box_content text-center">
+                                <i class="flaticon-021-carriage"></i>
+                                <h3 style="margin-top: 2px; margin-bottom: 5px"><b>Resepsi</b></h4>
+                                <hr style="margin-top: 2px; margin-bottom: 30px">
+                                <p><b>21 November 2021 <br>  Jl. Poros Kolaka-Pomalaa <br> Kel. Ngapa  Kec. Wundulako</b></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+
+            </div>
+            <!-- container end -->
+
+        </section>
+
+        <section id="lokasi" class="gla_section">
+            <div class="gla_map">
+                <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1tgfMYngangUmlQkuw7ptM8PGHLCqMe94" width="100%" height="480"></iframe>
+                <!-- <iframe src="https://www.google.com/maps/d/embed?mid=1Db39qSrYMFfOT9Momg4l4VQEOng&hl=en" width="100%" height="480"></iframe> -->
+
+            </div>
+
+        </section>
+        
+        <section id="prokes" class="gla_section gla_image_bck" data-color="#fff">
+            <div class="container text-center">
+                <h3 style="margin-top: 2px; margin-bottom: 5px; font-style: normal;"><b>Protokol Kesehatan</b></h2>
+                <p style="margin-top: 2px; margin-bottom: 5px"><b>Untuk mematuhih himbauan pemerintah dalam pencegahan penyebaran Covid-19, maka diharapkan Bapak/Ibu/Saudara/i tamu undangan untuk : </p></p>
+
+                <!-- icon boxes -->
+                <div class="gla_icon_boxes row">
+                    <!-- item -->
+                    <div class="gla_icon_box col-md-3 col-sm-6">
+                        
+                        <div class="gla_icon_box_content">
+                            <img class="gla_reviews_item" width="100" src="images/mask.png" alt="">
+                            <hr style="margin-top: 2px; margin-bottom: 30px">
+                            <p><b>Selalu memakai masker selama acara berlangsung.</b></p>
+                        </div>
+                        
+                    </div>
+
+                    <!-- item -->
+                    <div class="gla_icon_box col-md-3 col-sm-6">
+                        <div class="gla_icon_box_content">
+                            <img class="gla_reviews_item" width="100" src="images/washing-hands.png" alt="">
+                            <hr style="margin-top: 2px; margin-bottom: 30px">
+                            <p><b>Mencuci tangan sebelum dan sesudah memasuki lokasi acara.</b></p>
+                        </div>
+                        
+                    </div>
+
+                    <!-- item -->
+                    <div class="gla_icon_box col-md-3 col-sm-6">
+                        <div class="gla_icon_box_content">
+                            <img class="gla_reviews_item" width="100" src="images/distance.png" alt="">
+                            <hr style="margin-top: 2px; margin-bottom: 30px">
+                            <p><b>Tidak berkerumun dan menjaga jarak satu sama lain.</b></p>
+                            
+                        </div>
+                        
+                    </div>
+
+                    <!-- item -->
+                    <div class="gla_icon_box col-md-3 col-sm-6">
+                        <div class="gla_icon_box_content">
+                            <img class="gla_reviews_item" width="100" src="images/no-handshake.png" alt="">
+                            <hr style="margin-top: 2px; margin-bottom: 30px">
+                            <p><b>Tidak bersalaman, dapat menggantinya dengan bersalaman jarak jauh.</b></p>
+                            
+                            
+                        </div>
+                        
+                    </div> 
+                </div>
+                <!-- icon boxes end -->
+                
+            </div>
+            <!-- container end -->
+
+        </section>
+
+            
+        <section class="gla_section gla_image_bck gla_fixed gla_wht_txt" data-stellar-background-ratio="0.8" data-image="images/footer.jpg">
+            
+            <!-- Over -->
+            <div class="gla_over" data-color="#282828" data-opacity="0.4"></div>
+            
+            <div class="container text-center">
+                <p><img src="images/animations/just_wh.gif" data-bottom-top="@src:images/animations/just_wh.gif" height="150" alt=""></p>
+                <h3>You’re wonderful. Can you be wonderful forever?"</h3>
+                <p class="gla_subtitle">— Brennan. A true master of words.</p>
+
+                
+                
+            </div>
+            <!-- container end -->
+
+        </section>
+            
+
+
     </div>
 
-    <script src="./assets/js/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-    <script src="./assets/js/popper.min.js"></script>
-    <script src="./assets/js/bootstrap.min.js"></script>
-    <script src="./assets/js/feather.min.js"></script>
-    <script>
-      feather.replace()
 
-
-    </script>
-</body></html>
+<script src="js/jquery-1.12.4.min.js"></script> 
+<script src="js/custom.js"></script>
+<script src="js/glanz_library.js"></script> 
+<script src="js/glanz_script.js"></script>
+</body>
+</html>

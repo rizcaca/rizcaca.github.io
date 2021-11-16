@@ -19,6 +19,7 @@ function playsong() {
 $("#buka").on('click', function () {
     document.getElementById("song").pause();
     document.getElementById("song").play();
+
     window.removeEventListener('DOMMouseScroll', preventDefault, false);
     window.removeEventListener(wheelEvent, preventDefault, wheelOpt); 
     window.removeEventListener('touchmove', preventDefault, wheelOpt);

@@ -9,16 +9,6 @@ $("#penerima").html(to);
 console.log(to);
 
 
-function playsong() {
-    // window.addEventListener('DOMMouseScroll', preventDefault, false); // older FF
-    // window.addEventListener(wheelEvent, preventDefault, wheelOpt); // modern desktop
-    // window.addEventListener('touchmove', preventDefault, wheelOpt); // mobile
-    // window.addEventListener('keydown', preventDefaultForScrollKeys, false);4
-
-    $('body').bind('touchmove', function(e){e.preventDefault()})
-
-}
-
 $("#buka").on('click', function () {
     document.getElementById("song").pause();
     document.getElementById("song").play();
@@ -45,24 +35,7 @@ $("#bukahidden").on('click', function () {
 });
 
 
-// window.addEventListener('load', function () {
-//     var audioCtx = new (window.AudioContext || window.webkitAudioContext)();
-//     var source = audioCtx.createBufferSource();
-//     var xhr = new XMLHttpRequest();
-//     xhr.open('GET', 'audio/audio.mp3');
-//     xhr.responseType = 'arraybuffer';
-//     xhr.addEventListener('load', function (r) {
-//         audioCtx.decodeAudioData(
-//                 xhr.response, 
-//                 function (buffer) {
-//                     source.buffer = buffer;
-//                     source.connect(audioCtx.destination);
-//                     source.loop = false;
-//                 });
-//         source.start(0);
-//     });
-//     xhr.send();
-// });
+
 
 
 // left: 37, up: 38, right: 39, down: 40,
@@ -93,6 +66,7 @@ var wheelEvent = 'onwheel' in document.createElement('div') ? 'wheel' : 'mousewh
 
 // call this to Disable
 function disableScroll() {
+
   window.addEventListener('DOMMouseScroll', preventDefault, false); // older FF
   window.addEventListener(wheelEvent, preventDefault, wheelOpt); // modern desktop
   window.addEventListener('touchmove', preventDefault, wheelOpt); // mobile

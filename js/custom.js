@@ -10,20 +10,26 @@ console.log(to);
 
 
 function playsong() {
-    window.addEventListener('DOMMouseScroll', preventDefault, false); // older FF
-    window.addEventListener(wheelEvent, preventDefault, wheelOpt); // modern desktop
-    window.addEventListener('touchmove', preventDefault, wheelOpt); // mobile
-    window.addEventListener('keydown', preventDefaultForScrollKeys, false);
+    // window.addEventListener('DOMMouseScroll', preventDefault, false); // older FF
+    // window.addEventListener(wheelEvent, preventDefault, wheelOpt); // modern desktop
+    // window.addEventListener('touchmove', preventDefault, wheelOpt); // mobile
+    // window.addEventListener('keydown', preventDefaultForScrollKeys, false);4
+
+    $('body').bind('touchmove', function(e){e.preventDefault()})
+
 }
 
 $("#buka").on('click', function () {
     document.getElementById("song").pause();
     document.getElementById("song").play();
+    enableScroll();
+    // window.removeEventListener('DOMMouseScroll', preventDefault, false);
+    // window.removeEventListener(wheelEvent, preventDefault, wheelOpt); 
+    // window.removeEventListener('touchmove', preventDefault, wheelOpt);
+    // window.removeEventListener('keydown', preventDefaultForScrollKeys, false);
 
-    window.removeEventListener('DOMMouseScroll', preventDefault, false);
-    window.removeEventListener(wheelEvent, preventDefault, wheelOpt); 
-    window.removeEventListener('touchmove', preventDefault, wheelOpt);
-    window.removeEventListener('keydown', preventDefaultForScrollKeys, false);
+    $('body').unbind('touchmove')
+
     console.log("tsting");
 });
 

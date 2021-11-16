@@ -299,6 +299,8 @@ h3 {
 	margin-right: auto;
 	margin-left: auto	
 }
+
+
 .gla_content img {
 	max-width: 100%;
 	border-radius: 5px;
@@ -5790,7 +5792,13 @@ footer {
 	margin-bottom: 10px;
 }
 .text-center .gla_iphone_pink, 
+
 .text-center .gla_iphone_gold {
+	height: 540px;
+	width: 185px;
+}
+
+.text-center #arrum {
 	height: 540px;
 	width: 185px;
 }

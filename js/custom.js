@@ -9,6 +9,16 @@ $("#penerima").html(to);
 console.log(to);
 
 
+const sampul = jQuery('.modalx').data('sampul');
+jQuery('.modalx').css('background-image', 'url(' + sampul + ')');
+jQuery('body').css('overflow', 'hidden');
+
+$("#buka").on('click', function () {
+    document.getElementById("song").play();
+    console.log("tsting");
+});
+
+
 // window.addEventListener('load', function () {
 //     var audioCtx = new (window.AudioContext || window.webkitAudioContext)();
 //     var source = audioCtx.createBufferSource();

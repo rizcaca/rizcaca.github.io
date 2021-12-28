@@ -32,22 +32,14 @@ params:
   # home
   disable_home: false
   profile_image: "/images/profile.png"
-  name: "Example name"
+  name: "RIZCACA"
   namecolor: ffc107
   profession: "Profession"
-  github: "https://github.com"
-  gitlab: "https://gitlab.com"
-  linkedin: "https://linkedin.com"
-  twitter: "https://twitter.com/"
-  instagram: "https://instagram.com/"
-  facebook: "https://facebook.com"
+  github: "https://github.com/rizcaca"
+  linkedin: "https://www.linkedin.com/in/rizka-afriani-tandipayuk-b0a0a2152/"
+  twitter: "https://twitter.com/rizcaca"
+  instagram: "https://instagram.com/rizcaca"
 
-  #Custom social links
-  # customSocialLinks:
-  #   - imageURL: "https://hugo-profile.netlify.app/images/fav.png"
-  #     url: "https://gohugo.com"
-  #   - fontAwesomeIconName: "fa fa-envelope"
-  #     url: "https://gmail.com"
   
   # About
   disable_about: false

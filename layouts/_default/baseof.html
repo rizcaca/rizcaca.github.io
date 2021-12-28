@@ -24,7 +24,9 @@
   {{ else }}
   {{ end }}
 
-
+  {{ if .Site.Params.GoogleAnalyticsID }}
+  {{ partial "analytics-gtag.html" . }}
+  {{ end }}
 
 </head>
 

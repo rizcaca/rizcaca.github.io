@@ -1,10 +1,10 @@
-baseURL: "https://izcasaur.us"
+baseURL: "https://rizcasaur.us"
 languageCode: "en-us"
 title: "rizcasaur.us"
 theme: "./.."
 relativeURLs: true
 
-googleanalytics: G-P1DP91QYX8
+googleanalytics: "G-P1DP91QYX8"
 disqusShortname:
 Paginate: 3
 markup:

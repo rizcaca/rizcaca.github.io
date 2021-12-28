@@ -2,11 +2,13 @@
 publish = "website/public"
 command = "cd website && hugo --gc --minify --themesDir ../.."
 
+
 [context.production.environment]
 HUGO_VERSION = "0.76.5"
 HUGO_ENV = "production"
 HUGO_ENABLEGITINFO = "true"
 HUGO_THEME = "repo"
+googleAnalytics = "G-P1DP91QYX8"
 
 [context.split1]
 command = "cd website && hugo --gc --minify --enableGitInfo --themesDir ../.."

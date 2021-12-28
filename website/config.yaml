@@ -1,6 +1,6 @@
-baseURL: "https://hugo-profile.netlify.app"
+baseURL: "https://izcasaur.us"
 languageCode: "en-us"
-title: "Hugo-profile"
+title: "rizcasaur.us"
 theme: "./.."
 relativeURLs: true
 
@@ -32,7 +32,7 @@ params:
   # home
   disable_home: false
   profile_image: "/images/profile.png"
-  name: "RIZCACA"
+  name: "Rizcaca"
   namecolor: ffc107
   profession: "Profession"
   github: "https://github.com/rizcaca"
@@ -42,7 +42,7 @@ params:
 
   
   # About
-  disable_about: false
+  disable_about: true
   descripe_l1_person: "Hi, I'm Profile, a passionate web developer. I tend to make use of modern web technologies to build websites that looks great, feels fantastic, and functions correctly."
   descripe_l2_person: "This is a example template for about section. You can find my works [here](#projects)"
   skills:
@@ -56,7 +56,7 @@ params:
       percentage: 70
 
   # Experience
-  disable_experience: false
+  disable_experience: true
   experience:
     - company: "Google"
       # id: "google-developer"   // use this, when you want to change the id(used for navigation)
@@ -84,7 +84,7 @@ params:
         - point: Created a frontend design for a product.
 
   # Education
-  disable_education: false
+  disable_education: true
   education:
     - degree: "B.tech"
       branch: "Information Technology"
@@ -103,7 +103,7 @@ params:
       graduation: "year"
 
   # Projects
-  disable_projects: false
+  disable_projects: true
   projects:
     - name: "Example project without details"
       img: /images/project.jpg
@@ -112,7 +112,7 @@ params:
       description: "Description of project"
 
   # Achievements
-  disable_achievements: false
+  disable_achievements: true
   achievements:
     - title: Competition winner
       description: We are developed a product which can help others.
@@ -130,7 +130,7 @@ params:
       img: /images/achiv.jpg
 
   # Contact
-  disable_contact: false
+  disable_contact: true
   contact_content: My inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!
   email: "example@mail.com"
 

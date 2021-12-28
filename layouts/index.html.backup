@@ -19,6 +19,10 @@
 <body>
   {{- partial "sections/v1/home.html" . -}}
   {{- partial "sections/v1/blog.html" . -}}
+  {{- partial "sections/v1/about.html" . -}}
+  {{- partial "sections/v1/do_things.html" . -}}
+  {{- partial "sections/v1/projects.html" . -}}
+  {{- partial "sections/v1/contact.html" . -}}
 
   {{- partial "sections/v1/footer.html" . -}}
   {{- partial "sections/v1/scripts.html" . -}}
@@ -39,6 +43,9 @@
 <body>
   {{- partial "sections/v2/header.html" . -}}
   {{- partial "sections/v2/about.html" . -}}
+  {{- partial "sections/v2/do_things.html" . -}}
+  {{- partial "sections/v2/footer.html" . -}}
+  {{- partial "sections/v2/scripts.html" . -}}
 </body>
 
 {{ else if eq .Site.Params.version 3 }}

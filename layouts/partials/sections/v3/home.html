@@ -45,22 +45,6 @@
             </a>
             <span class="px-1"></span>
             {{ end }}
-
-            <!-- customSocialLinks -->
-            {{ range .Site.Params.customSocialLinks }}
-            {{ if .fontAwesomeIconName }}
-            <a href="{{ .url }}" class="social-icon">
-              <i class="fa-lg {{ .fontAwesomeIconName }}"></i>
-              &#8203;
-            </a>
-            {{ else }}
-            <a href="{{ .url }}" class="social-icon">
-              <img class="fab fa-lg" src="{{ .imageURL }}" alt="{{ .name }}" width="4%" />
-              &#8203;
-            </a>
-            {{ end }}
-            <span class="px-1"></span>
-            {{ end }}
           </div>
         </div>
 
@@ -71,7 +55,6 @@
           src="{{ .Site.Params.profile_image }}" alt="{{ .Site.Params.name }}" class="rounded">
         {{ end }}
       </div>
-
     </div>
   </div>
 </div>

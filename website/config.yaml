@@ -143,7 +143,7 @@ params:
   email: "example@mail.com"
 
   # Footer
-  socialiconfooter: true
+  socialiconfooter: false
   recentposts: false
 
   # Blog

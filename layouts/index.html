@@ -19,6 +19,10 @@
 <body>
   {{- partial "sections/v1/home.html" . -}}
   {{- partial "sections/v1/blog.html" . -}}
+  {{- partial "sections/v1/about.html" . -}}
+  {{- partial "sections/v1/do_things.html" . -}}
+  {{- partial "sections/v1/projects.html" . -}}
+  {{- partial "sections/v1/contact.html" . -}}
 
   {{- partial "sections/v1/footer.html" . -}}
   {{- partial "sections/v1/scripts.html" . -}}
@@ -39,6 +43,9 @@
 <body>
   {{- partial "sections/v2/header.html" . -}}
   {{- partial "sections/v2/about.html" . -}}
+  {{- partial "sections/v2/do_things.html" . -}}
+  {{- partial "sections/v2/footer.html" . -}}
+  {{- partial "sections/v2/scripts.html" . -}}
 </body>
 
 {{ else if eq .Site.Params.version 3 }}
@@ -73,6 +80,36 @@
     {{ if .Site.Params.disable_home }}
     {{ else }}
     {{- partial "sections/v3/home.html" . -}}
+    {{ end }}
+
+    {{ if .Site.Params.disable_about }}
+    {{ else }}
+    {{- partial "sections/v3/about.html" . -}}
+    {{ end }}
+
+    {{ if .Site.Params.disable_experience }}
+    {{ else }}
+    {{- partial "sections/v3/experience.html" . -}}
+    {{ end }}
+
+    {{ if .Site.Params.disable_education }}
+    {{ else }}
+    {{- partial "sections/v3/education.html" . -}}
+    {{ end }}
+
+    {{ if .Site.Params.disable_projects }}
+    {{ else }}
+    {{- partial "sections/v3/projects.html" . -}}
+    {{ end }}
+
+    {{ if .Site.Params.disable_achievements }}
+    {{ else }}
+    {{- partial "sections/v3/achievements.html" . -}}
+    {{ end }}
+
+    {{ if .Site.Params.disable_contact }}
+    {{ else }}
+    {{- partial "sections/v3/contact.html" . -}}
     {{ end }}
 
     {{- partial "sections/v3/footer.html" . -}}

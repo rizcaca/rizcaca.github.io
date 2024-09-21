@@ -3,13 +3,15 @@
 <head>
   <meta charset="utf-8">
   <title>Content Manager</title>
-  <!-- Use the locally downloaded version of netlify-cms.js -->
+  <link rel="stylesheet" href="/admin/css/netlify-cms.css">
+  <!-- Use local version of Netlify CMS -->
   <script src="/admin/js/netlify-cms.js"></script>
 </head>
 <body>
   <script>
     window.CMS_MANUAL_INIT = true;
 
+    // Wait for DOMContentLoaded event before initializing CMS
     document.addEventListener("DOMContentLoaded", function () {
       if (typeof window.CMS !== 'undefined') {
         window.CMS.init({

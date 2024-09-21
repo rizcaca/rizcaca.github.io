@@ -1,6 +1,6 @@
 baseURL = "https://rizcaca.github.io/"
 languageCode = 'en-us'
-title = 'Pehtheme'
+title = 'Rizcaca'
 theme = 'pehtheme-hugo'
 
 paginate = '6' # <- Set the desired number of posts per page 
@@ -12,14 +12,14 @@ canonifyURLs = true
 
 [params]
 	# Meta description, not exceeding 160 characters, used for the meta description within the HTML head
-	description = 'Pehtheme Hugo Lite: A minimalist Hugo theme, built with TailwindCSS, for efficient performance and minimalism.'
+	description = "Let's grow and glow!!"
 	mainSections = 'posts'
 
 [author]
 	name = 'Rizka Afriani Tandipayuk'
 	bio = "Let's grow and glow!!"
 	avatar = '/images/avatarrizcaca.jpeg'
-	twitter = 'https://twitter.com/insertapps'
+	twitter = 'https://x.com/rizcacaaaa'
 
 [menu] # Menu management
 	[[menu.main]]
@@ -34,10 +34,6 @@ canonifyURLs = true
 		name = 'Tags'
 		pageRef = '/tags'
 		weight = 20
-	[[menu.main]]
-		name = 'Taxonomy'
-		pageRef = '/tags/space/'
-		weight = 25
 
 [module]
   [module.hugoVersion]

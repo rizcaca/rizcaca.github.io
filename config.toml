@@ -16,9 +16,9 @@ canonifyURLs = true
 	mainSections = 'posts'
 
 [author]
-	name = 'Anthony Arphan'
-	bio = 'Debitis assumenda esse dignissimos aperiam delectus maxime tenetur repudiandae dolore'
-	avatar = '/images/nasa-astronaut-unsplash.jpg'
+	name = 'Rizka Afriani Tandipayuk'
+	bio = "Let's grow and glow!!"
+	avatar = '/images/avatarrizcaca.jpeg'
 	twitter = 'https://twitter.com/insertapps'
 
 [menu] # Menu management

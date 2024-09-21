@@ -1,4 +1,9 @@
 baseURL = "https://rizcaca.github.io/"
 languageCode = 'en-us'
 title = 'My New Hugo Site'
-theme = ["newsroom"]
+theme = "newsroom"
+
+
+# Ensure HTML is included in the outputs
+[outputs]
+  home = ["HTML", "RSS"]

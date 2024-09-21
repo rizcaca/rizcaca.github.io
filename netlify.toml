@@ -5,3 +5,8 @@
 [context.production.environment]
   HUGO_VERSION = "0.123.7"
   HUGO_BASEURL = "https://rizcaca.github.io/"
+
+[redirects]
+  from = "/admin/*"
+  to = "/admin/index.html"
+  status = 200

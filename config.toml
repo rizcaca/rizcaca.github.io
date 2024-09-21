@@ -1,9 +1,11 @@
 baseURL = "https://rizcaca.github.io/"
 languageCode = 'en-us'
 title = 'My New Hugo Site'
-theme = "newsroom"
+theme = "pehtheme-hugo"
+# Enable this to show only summaries in the lists and enable "read more"
+hasCJKLanguage = true
 
 
 # Ensure HTML is included in the outputs
 [outputs]
-  home = ["HTML", "RSS"]
+  home = ["HTML"]

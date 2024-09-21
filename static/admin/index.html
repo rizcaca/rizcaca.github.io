@@ -27,10 +27,14 @@
     window.CMS_MANUAL_INIT = true;
   </script>
   <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      CMS.init({
-        config: './config.yml',
-      });
+    document.addEventListener("DOMContentLoaded", function () {
+      if (typeof CMS !== 'undefined') {
+        CMS.init({
+          config: './config.yml',
+        });
+      } else {
+        console.error('CMS is not defined');
+      }
     });
   </script>
 </body>

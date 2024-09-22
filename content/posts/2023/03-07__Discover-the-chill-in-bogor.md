@@ -1,8 +1,19 @@
 ---
 title: Discover the Chill in Bogor! 🌿🍦
-date: 2023-05-07T11:40:00.000Z
+date: 2023-08-15T13:45:49+07:00
+slug: /child-in-bogor/
 image: images/bogor.jpg
+caption: Photo by Rizka Afriani Tandipayuk
+categories:
+  - space
+tags:
+  - mars 
+  - space 
+  - exploration
+  - feature
+draft: false
 ---
+
 #### **Explore the Beauty of Taman Raya Bogor**  
 Taman Raya Bogor, or the Bogor Botanical Gardens, is a sanctuary of lush greenery and a must-visit destination for nature lovers. With over 200 years of history, it offers a stunning collection of rare plants, majestic trees, and vibrant flowers spread over 87 hectares. Walking through the park’s vast landscapes, you’ll discover the beauty of nature in every corner, from towering palms to delicate orchids. It's a place where you can reconnect with nature and feel the serenity of the outdoors.
 

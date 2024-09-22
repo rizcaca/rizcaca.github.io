@@ -20,6 +20,10 @@ jobs:
       - name: Build
         run: hugo --gc --minify
 
+      - name: Create CNAME file
+        run: |
+          echo 'rizcasaur.us' > ./public/CNAME
+
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:

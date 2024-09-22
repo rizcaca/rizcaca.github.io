@@ -1,10 +1,6 @@
-# [build]
-#   publish = "public"
-#   command = "hugo --gc --minify --themesDir themes"
-
 [build]
-  publish = "none"
-  command = "echo 'Skipping build on Netlify'"
+  publish = "public"
+  command = "hugo --gc --minify --themesDir themes"
 
 [context.production.environment]
   HUGO_VERSION = "0.123.7"

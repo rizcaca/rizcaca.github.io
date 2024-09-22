@@ -1,0 +1,27 @@
+backend:
+  name: git-gateway
+  branch: main # Adjust the branch name if needed
+
+media_folder: "assets/images" # Location where uploaded images will be stored
+public_folder: "/assets/images" # URL path for the media
+
+collections:
+  - name: "posts"
+    label: "Posts"
+    folder: "content/posts/{{year}}" # Organizes posts by year
+    create: true
+    slug: "{{month}}-{{day}}_{{slug}}" # Format for slug: MM-DD_Title
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD" }
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Body", name: "body", widget: "markdown" }
+      
+  - name: "pages"
+    label: "Pages"
+    folder: "content"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }

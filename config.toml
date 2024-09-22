@@ -25,15 +25,15 @@ canonifyURLs = true
 	[[menu.main]]
 		name = 'Home'
 		pageRef = '/'
-		weight = 10
+		weight = 2
 	[[menu.main]]
 		name = 'About'
 		pageRef = '/about'
-		weight = 15
+		weight = 5
 	[[menu.main]]
 		name = 'Posts'
 		pageRef = '/posts'
-		weight = 20
+		weight = 5
 
 [module]
   [module.hugoVersion]

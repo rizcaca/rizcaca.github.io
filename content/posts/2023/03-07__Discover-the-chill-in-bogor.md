@@ -1,5 +1,5 @@
 ---
-title: Discover the Chill in Bogor! 🌿🍦
+title: Discover the Chill in Bogor! 
 date: 2023-08-15T13:45:49+07:00
 slug: /child-in-bogor/
 image: images/bogor.jpg

@@ -1,40 +1,27 @@
 backend:
   name: git-gateway
-  branch: main # The branch you want to update (optional; defaults to master)
-  commit_messages:
-    create: "Create {{collection}} “{{slug}}”"
-    update: "Update {{collection}} “{{slug}}”"
-    delete: "Delete {{collection}} “{{slug}}”"
+  branch: main # Adjust the branch name if needed
 
-media_folder: "static/uploads" # Where uploaded media files will go
-public_folder: "/uploads" # Folder for public access of media files
+media_folder: "assets/images" # Location where uploaded images will be stored
+public_folder: "/assets/images" # URL path for the media
 
 collections:
   - name: "posts"
-    label: "Blog Posts"
-    folder: "content/posts"
+    label: "Posts"
+    folder: "content/posts/{{year}}" # Organizes posts by year
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Customize the URL slug format
+    slug: "{{month}}-{{day}}_{{slug}}" # Format for slug: MM-DD_Title
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD" }
+      - { label: "Description", name: "description", widget: "text" }
       - { label: "Body", name: "body", widget: "markdown" }
-
+      
   - name: "pages"
     label: "Pages"
-    folder: "content/pages"
+    folder: "content"
     create: true
     slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
-
-  - name: "settings"
-    label: "Site Settings"
-    files:
-      - name: "general"
-        label: "General Settings"
-        file: "data/settings/general.json"
-        fields:
-          - { label: "Site Title", name: "site_title", widget: "string" }
-          - { label: "Site Description", name: "site_description", widget: "text" }

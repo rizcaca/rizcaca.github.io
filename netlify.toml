@@ -1,14 +1,13 @@
 # [build]
 #   publish = "public"
 #   command = "hugo --gc --minify --themesDir themes"
-
 [build]
-  publish = "none"
-  command = "echo 'Skipping build on Netlify'"
+  publish = "static/admin" # Publishing only the admin interface
+  command = "echo 'Skipping site build on Netlify'" # Skipping the build process
 
 [context.production.environment]
   HUGO_VERSION = "0.123.7"
-  HUGO_BASEURL = "https://rizcaca.github.io/"
+  HUGO_BASEURL = "https://rizcasaur.us/"
 
 [[redirects]]
   from = "/admin/*"

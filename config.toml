@@ -31,8 +31,8 @@ canonifyURLs = true
 		pageRef = '/about'
 		weight = 15
 	[[menu.main]]
-		name = 'Tags'
-		pageRef = '/tags'
+		name = 'Posts'
+		pageRef = '/posts'
 		weight = 20
 
 [module]
